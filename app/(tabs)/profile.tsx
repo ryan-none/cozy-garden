@@ -7,6 +7,7 @@ import { RelativePathString, router } from 'expo-router';
 import { supabase } from '@/lib/supabase';
 import { useGame } from '@/context/GameContext';
 import { COLORS, SPACING, RADIUS, SHADOWS, TYPOGRAPHY } from '@/constants/theme';
+import { useTheme } from '@/context/ThemeContext';
 
 const THEMES = [
   { id: 'spring', label: 'Spring', emoji: '🌸', colors: ['#EAF5E6', '#D0EBD6'] as const },
@@ -20,7 +21,7 @@ export default function ProfileScreen() {
   const [soundOn, setSoundOn] = useState(true);
   const [musicOn, setMusicOn] = useState(true);
   const [notifOn, setNotifOn] = useState(true);
-  const [darkMode, setDarkMode] = useState(false);
+  const { isDark, toggleTheme } = useTheme();
   const [activeTheme, setActiveTheme] = useState('spring');
 
   const handleSignOut = async () => {
@@ -134,13 +135,13 @@ export default function ProfileScreen() {
                 value={notifOn}
                 onToggle={setNotifOn}
               />
-              <View style={styles.settingDivider} />
+              {/* <View style={styles.settingDivider} />
               <SettingRow
                 icon={<Moon size={20} color={COLORS.green500} />}
                 label="Dark Mode"
                 value={isDark}
                 onToggle={toggleTheme}
-              />
+              /> */}
             </View>
           </View>
 

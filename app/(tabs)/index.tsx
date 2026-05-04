@@ -10,6 +10,7 @@ import PlantPickerModal from '../../components/custom/PlantPickerModal';
 import { COLORS, SPACING, RADIUS, SHADOWS, TYPOGRAPHY } from '@/constants/theme';
 import { PLANTS } from '@/lib/gameData';
 
+
 const { width, height } = Dimensions.get('window');
 const COLS = 3;
 const PLOT_GAP = 10;
