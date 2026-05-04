@@ -107,3 +107,22 @@ export const SHADOWS = {
     elevation: 8,
   },
 } as const;
+
+export const Colors = {
+  light: {
+    text: COLORS.text,
+    background: COLORS.surface,
+    tint: COLORS.green500,
+    icon: COLORS.textSecondary,
+    tabIconDefault: COLORS.textLight,
+    tabIconSelected: COLORS.green500,
+  },
+  dark: {
+    text: '#ECEDEE',
+    background: '#151718',
+    tint: '#5CAF60',
+    icon: '#9BA1A6',
+    tabIconDefault: '#9BA1A6',
+    tabIconSelected: '#5CAF60',
+  },
+};
