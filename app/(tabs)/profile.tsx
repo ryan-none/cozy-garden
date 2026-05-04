@@ -138,8 +138,8 @@ export default function ProfileScreen() {
               <SettingRow
                 icon={<Moon size={20} color={COLORS.green500} />}
                 label="Dark Mode"
-                value={darkMode}
-                onToggle={setDarkMode}
+                value={isDark}
+                onToggle={toggleTheme}
               />
             </View>
           </View>

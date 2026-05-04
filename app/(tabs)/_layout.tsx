@@ -83,9 +83,11 @@ const styles = StyleSheet.create({
   tabBar: {
     position: 'absolute',
     bottom: 20,
-    left: 20,
-    right: 20,
-    height: 70,
+    left: 15,
+    right: 15,
+    height: 60,
+    marginLeft: 10,
+    marginRight: 10,
     borderRadius: RADIUS.xxl,
     backgroundColor: 'rgba(255,255,255,0.92)',
     borderTopWidth: 0,
@@ -93,7 +95,7 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderColor: 'rgba(255,255,255,0.9)',
     paddingBottom: 0,
-    paddingTop: 0,
+    paddingTop: 10,
   },
   tabItem: {
     alignItems: 'center',
